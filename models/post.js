@@ -5,10 +5,20 @@ const postSchema = mongoose.Schema({
         type:"String",
         required:true
     },
-    description:{
+    creator:{
         type:"String"
     },
     selectedFile:{
+        type:"String"
+    },
+    likesCount:{
+        type:"Number",
+        default:0,
+    },
+    message:{
+        type:"String"
+    },
+    tags:{
         type:"String"
     }
 })
