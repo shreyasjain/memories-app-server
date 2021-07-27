@@ -11,9 +11,9 @@ app.use(bodyParser.urlencoded({limit:"30mb", extended: true}))
 app.use(cors())
 app.use("/",postRoutes)
 
-// app.get("/",(req,res)=>{
-//     res.send("Welcome to memories app.")
-// })
+app.get("/",(req,res)=>{
+    res.send("Welcome to memories app.")
+})
 
 const PORT = process.env.PORT||5000
 
